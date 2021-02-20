@@ -2,7 +2,10 @@ import numpy as np
 import cv2
 
 # flag for imread 0 is grayscale, 1 is color, -1 is alpha channel
-img = cv2.imread('lena.jpg', 1)
+#img = cv2.imread('lena.jpg', 1)
+
+# create image with numpy zeros method
+img = np.zeros([512, 512, 3], np.uint8)
 
 # draw a line
 img = cv2.line(img, (0, 0), (255, 255), (147, 96, 44), 10)  # 44, 96, 147
