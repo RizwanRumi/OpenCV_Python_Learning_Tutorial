@@ -7,12 +7,18 @@ import cv2
 
 cap = cv2.VideoCapture(0)
 
-while True:
+# isOpened() return true or false about the directory of video file path
+print(cap.isOpened())
+
+while cap.isOpened():
+    # while True:
     ret, frame = cap.read()
 
+    # print some video property : cap.get()
+    print(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    print(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
-    #convert color to gray scale video
-
+    #  convert color to gray scale video
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
     cv2.imshow('frame', gray)
