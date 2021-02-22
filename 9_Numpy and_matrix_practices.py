@@ -1,4 +1,5 @@
 import numpy as np
+import math
 
 a = np.array([['Mon', 18, 20, 22, 17], ['Tue', 11, 18, 21, 18],
               ['Wed', 15, 21, 20, 19], ['Thu', 11, 20, 22, 21],
@@ -111,5 +112,34 @@ print("first row, all columns: ", A[:1, ])
 print("all rows, second column: ", A[:, 2])
 print("all rows, third to the fifth column", A[:, 2:5])
 
+print("use range function: ")
+a = np.arange(10, 30, 5) # range between 10 to 30 and difference 5
+b = np.arange(0, 2, 0.3)
+print("A: {0}, type: {1}".format(a, type(a)))
+print("B: ", b)
 
+print("use linspace: ")
+a = np.linspace(0, 2, 9)  # total 9 numbers from 0 to 2
+print(a)
+
+print("reshape of an array: ")
+a = np.arange(12).reshape(3, 4) # for 2d as matrices
+print(a)
+b = np.arange(24).reshape(2, 3, 4) # for 3d as lists of matrices
+print(b)
+
+print("basic operations: ")
+a = np.ones(3, dtype=np.int32)
+print(a)
+
+b = np.linspace(0, math.pi, 3)
+print(b)
+c = a+b
+print(c)
+d = np.exp(c*1j)
+print(d)
+
+print("random")
+a = np.random.random((2, 3))
+print(a)
 
