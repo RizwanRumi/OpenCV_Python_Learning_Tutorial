@@ -87,4 +87,29 @@ print("A[:,0] =", A[:, 0])    # First Column
 print("A[:,3] =", A[:, 3])    # Fourth Column
 print("A[:,-1] =", A[:, -1])  # Last Column (4th column in this case)
 
+print("\n Slicing of a matrix: \n")
+letters = np.array([1, 3, 5, 7, 9, 7, 5])
+print(letters)
+
+print("3rd to 5th elements: ", letters[2:5])        # Output: [5, 7, 9]
+
+print("1st to 4th elements: ", letters[:-5])        # Output: [1, 3]
+
+print("6th to last elements: ", letters[5:])         # Output:[7, 5]
+
+print("1st to last elements: ", letters[:])          # Output:[1, 3, 5, 7, 9, 7, 5]
+
+print("reversing a list: ", letters[::-1])          # Output:[5, 7, 9, 7, 5, 3, 1]
+
+A = np.array([[1, 4, 5, 12, 14],
+    [-5, 8, 9, 0, 17],
+    [-6, 7, 11, 19, 21]])
+
+print(A)
+print("two rows, four columns: ", A[:2, :4])
+print("first row, all columns: ", A[:1, ])
+print("all rows, second column: ", A[:, 2])
+print("all rows, third to the fifth column", A[:, 2:5])
+
+
 
