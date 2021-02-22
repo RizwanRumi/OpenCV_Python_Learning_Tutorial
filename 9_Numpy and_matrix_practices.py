@@ -54,6 +54,19 @@ print('A = ', A)
 B = np.arange(12).reshape(3, 4)     # n-d array creating
 print('B = ', B)
 
+print("\n Matrix Operations: \n")
+
+A = np.array([[2, 4], [5, 6]])
+B = np.array([[9, -3], [3, 6]])
+C = A + B
+print('Addition: \n', C)
+
+A = np.array([[3, 6, 7], [5, -3, 0]])
+B = np.array([[1, 1], [2, 1], [3, -3]])
+C = A.dot(B)
+print('Multiplication: \n', C)
 
 
-
+print('Transpose: Convert row to column and column to row \n')
+A = np.array([[1, 1], [2, 1], [3, -3]])
+print(A.transpose())
