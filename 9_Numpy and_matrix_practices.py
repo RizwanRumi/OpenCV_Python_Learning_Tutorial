@@ -54,6 +54,11 @@ print('A = ', A)
 B = np.arange(12).reshape(3, 4)     # n-d array creating
 print('B = ', B)
 
-
+print("universal functions: ")
+a = np.arange(3)
+b = np.exp(a)
+print(b)
+c = np.sqrt(a)
+print(c)
 
 
