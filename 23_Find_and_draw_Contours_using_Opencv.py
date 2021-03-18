@@ -14,7 +14,10 @@ print(contours[0])
 #cv2.drawContours(img, contours, -1, (0, 255, 0), 3) # -1 = draw all contours
 #cv2.drawContours(img, contours, 0, (0, 255, 0), 3) # 0 = draw the first contours
 #cv2.drawContours(img, contours, 1, (0, 255, 0), 3) # 1 = draw the second contours
-cv2.drawContours(img, contours, 2, (0, 255, 0), 2)
+
+# this method is more useful to detect contours
+cnt = contours[9]
+cv2.drawContours(img, [cnt], 0, (0, 255, 0), 2)
 
 cv2.imshow('Image', img)
 #cv2.imshow('Image Gray', imgray)
