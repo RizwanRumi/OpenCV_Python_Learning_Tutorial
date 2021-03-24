@@ -21,4 +21,3 @@
 * Standard/Probabilistice Hough Line Transform
 * Lane Dtetection
 * circle detection using Hough Circle Transform
-*  
